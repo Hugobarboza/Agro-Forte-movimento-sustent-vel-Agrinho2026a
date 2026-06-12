@@ -3,68 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movimento Sustentável</title>
+    <title>Agro Forte & Sustentável</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <div class="logo">Eco<span class="highlight">Vida</span></div>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#sobre">Quem Somos</a></li>
-                <li><a href="#pilares">Pilares</a></li>
-                <li><a href="#dicas">Dicas</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Agro Forte & Sustentável</h1>
+            <p>O futuro da agricultura de precisão e preservação</p>
+        </div>
     </header>
 
-    <section id="inicio" class="hero">
-        <div class="hero-content">
-            <h1>Pense no Futuro, <br>Agir no <span class="highlight">Presente</span></h1>
-            <p>Pequenas mudanças de hábitos hoje garantem o amanhã das próximas gerações. Junte-se ao movimento.</p>
-            <button id="btn-conhecer">Começar Agora</button>
-        </div>
-    </section>
+    <main class="container">
+        <section class="sobre">
+            <h2>Tecnologia a Serviço do Campo</h2>
+            <p>A agricultura de precisão une a força da produção brasileira com o respeito ao meio ambiente. Utilizando dados, drones e sensores, conseguimos otimizar o uso de água e fertilizantes, garantindo solo fértil para as próximas gerações.</p>
+        </section>
 
-    <section id="sobre" class="container">
-        <h2>O que é o Movimento Sustentável?</h2>
-        <p>É um estilo de vida que busca equilibrar o desenvolvimento humano com a preservação do meio ambiente. Consiste em consumir de forma consciente, reduzir o desperdício e adotar práticas que respeitem os limites do nosso planeta.</p>
-    </section>
-
-    <section id="pilares" class="bg-light">
-        <div class="container">
-            <h2 class="text-center">Os 3 Pilares da Sustentabilidade</h2>
-            <div class="cards-grid">
-                <div class="card">
-                    <h3>Social</h3>
-                    <p>Garantir que as pessoas tenham acesso a recursos básicos, educação, saúde e igualdade, fortalecendo as comunidades.</p>
-                </div>
-                <div class="card">
-                    <h3>Ambiental</h3>
-                    <p>Preservar os ecossistemas, reduzir a pegada de carbono e proteger a biodiversidade através do uso consciente da água e energia.</p>
-                </div>
-                <div class="card">
-                    <h3>Econômico</h3>
-                    <p>Promover o crescimento financeiro de forma justa, que não esgote os recursos naturais e incentive o comércio local.</p>
-                </div>
+        <section class="pilares">
+            <div class="card" data-pilar="tecnologia">
+                <h3>Alta Tecnologia</h3>
+                <p>Uso de satélites e IA para monitorar a saúde das plantações em tempo real.</p>
             </div>
-        </div>
-    </section>
+            <div class="card" data-pilar="economia">
+                <h3>Economia de Recursos</h3>
+                <p>Redução drástica no desperdício de água e insumos agrícolas.</p>
+            </div>
+            <div class="card" data-pilar="Preservação">
+                <h3>Preservação Ativa</h3>
+                <p>Produzir mais na mesma área, evitando o desmatamento de novas terras.</p>
+            </div>
+        </section>
 
-    <section id="dicas" class="container">
-        <h2>Dicas Práticas para o Dia a Dia</h2>
-        <p>Clique no botão abaixo para gerar uma dica sustentável aleatória que você pode aplicar hoje mesmo!</p>
-        
-        <div class="dica-box">
-            <p id="texto-dica">Clique no botão para ver uma dica.</p>
-            <button id="btn-dica">Gerar Dica</button>
-        </div>
-    </section>
+        <section class="calculadora">
+            <h2>Simulador de Impacto Verde</h2>
+            <p>Descubra a estimativa de economia de água ao aplicar tecnologia de precisão em hectares (ha):</p>
+            <div class="form-grupo">
+                <input type="number" id="hectares" placeholder="Digite a quantidade de hectares">
+                <button id="btn-calcular">Calcular Economia</button>
+            </div>
+            <div id="resultado" class="escondido"></div>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2026 Movimento EcoVida. Feito com amor pelo planeta.</p>
+        <p>&copy; 2026 Movimento Agro Forte. Todos os direitos reservados.</p>
     </footer>
 
     <script src="script.js"></script>
